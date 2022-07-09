@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pathway+Gothic+One&family=Rancho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(50.09deg, rgba(89, 144, 36, 0.76) 39.05%, rgba(139, 195, 61, 0.8) 82%);
+}
+
+.discord {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho-logo {
+    height: 72px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Rancho', cursive;
+    color: white;
+    font-weight: 200;
+    font-size: 35px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid white;
+}
+
+.conteudo-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-main-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.conteudo-main-titulo {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400px;
+    font-size: 64px;
+    color: white;
+}
+
+.conteudo-main-subtitulo {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.conteudo-main-botao {
+    background-color: #B2EA7D;
+    height: 60px;
+    width: 180px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+.conteudo-main-botao:hover {
+    background-color: rgba(89, 144, 36, 0.76);
+}
+
+.conteudo-main-imagem {
+    height: 430px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.conteudo-secundario-titulo {
+    
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid white;
+}
+
+.rodape-imagem{
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.conteudo-sobre {
+    border-top: 0.4px solid white;
+    padding-top: 48px;
+}
+
+.conteudo-sobre-main {
+
+}
+
+.conteudo-sobre-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.conteudo-sobre-main-titulo {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+}
+
+.artigo-sobre-principal {
+    padding: 24px;
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+    text-align: justify;
+    line-break: auto;
+    }
+
+.artigo-sobre{
+    text-indent: 100px;
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 30px;
+}
+
+.sobre-imagem {
+    width: 700px;
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.portfolio {
+    border-top: 0.4px solid white;
+    margin-bottom: 48px;
+}
+
+.nasa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nasa-trabalho{
+    display: flex;
+    flex-direction: column;
+}
+
+.nasa-titulo{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+}
+
+.nasa-logo {
+    padding-top: 20px;
+    height: 230px;
+}
+
+.nasa-conteudo {
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*GALERIA*/
+.container-galeria {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 300px;
+    grid-gap: 5px;
+}
+
+.item-galeria {
+    position: relative;
+}
+
+.item-galeria .img-galeria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-galeria .title-galeria {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.h-1 {
+    grid-row: span 1;
+}
+
+.h-2 {
+    grid-row: span 2;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+
+.w-2 {
+    grid-column: span 2;
+}
+
+@media(max-width: 768px){
+    .container-galeria{
+        grid-auto-rows: repeat(1,1fr);
+        grid-auto-rows: 50vh;
+    }
+
+    .h-2 {
+        grid-row: span 1;
+    }
+
+    .w-2 {
+        grid-column: span 1;
+    }
+}
+    
+/*GALERIA*/
